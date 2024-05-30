@@ -1,0 +1,22 @@
+.containerHeader {
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    height: 3.5em;
+    justify-content: center;
+    justify-content: space-between;
+    box-shadow: 0px -2px 7px 6px #424242;
+}
+
+.styleLogo {
+    height: 3.5em;
+    width: 15em;
+    display: flex;
+}
+
+.styleTexto {
+    padding-right: 2em;
+    color: white;
+    font-size: 21px;
+    letter-spacing: 2px;
+}

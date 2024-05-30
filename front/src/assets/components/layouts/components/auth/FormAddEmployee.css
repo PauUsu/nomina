@@ -1,0 +1,170 @@
+.containerAddEmploy {
+    background: white;
+    border: 1px solid #ee2b7b;
+    border-radius: 3px;
+    display: flex;
+}
+
+.styleAddEmploy {
+    justify-content: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    width: 70%;
+    margin-left: 8.6em;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.containerFormAdd {
+    width: 70%;
+    margin-right: 5.8em;
+}
+
+.styleLetterAdd {
+    color: #ee2b7b;
+    font-weight: bold;
+    width: 16%;
+}
+
+.styleImgAdd {
+    padding: 10px 6px 10px 6px;
+}
+
+.styleForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5em;
+    margin-right: 5em;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.styleform {
+    height: calc(100vh - 21em);
+    overflow-x: hidden;
+    display: grid;
+}
+
+/*Fomulario nuevo*/
+/*Titulo*/
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #ee2b7b;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #ee2b7b;
+}
+
+/*Contenedor del nombre*/
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 2em;
+    justify-content: center;
+}
+
+/*Formulario e input*/
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 4em 9em;
+    border-radius: 20px;
+    position: relative;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input,
+.form label select {
+    background-color: #f8f8f8;
+    color: #9a9797;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input + span,
+.form label select + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span,
+.form label select:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span,
+.form label select:focus + span,
+.form label select:valid + span {
+    color: #ee2b7b;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.input, select {
+    font-size: medium;
+}
+
+.stylesSelects{
+    width: 104% !important;
+    max-width: 102.5%;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #ee2b7b;
+}
+
+.submit:hover {
+    background-color: #00bfff96;
+}
+
+.btonSubmit{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+

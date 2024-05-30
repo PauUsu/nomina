@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  },
+
+  "scripts":{
+    "levantarServidor": "json-server --port 1234 --watch database.json"
+  }
+}
