@@ -12,10 +12,10 @@ const Home = () => {
       <Header />
       <div className="containerMenuForm menu">
         <Menu />
-      </div>
-      <div>
-        {/* <Route path="/agregar" element={<FormAddEmployee />} /> */}
-        {/* <Route path="/liquidar" element={<Liquidar />} /> */}
+        <div className="containerInfoLogin">
+            <p className="styleHello"> Bienvenido al Centro de Costos y Nómina</p>
+            <img src="public/infoLogin.jpg" alt="empleados" className="styleImgLogin" />
+        </div>
       </div>
     </div>
   );

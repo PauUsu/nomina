@@ -1,13 +1,18 @@
-/* body {
-    margin: 0px;
-    padding: 0px;
+.containerInfoLogin {
+    display: grid;
+    justify-items: center;
+}
+
+.styleHello {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 0em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    background-color: #DEDEDE;
-} */
-  
-  
-  
-  
-  
-  
+    color: #242422;
+}
+
+.styleImgLogin {
+    border-radius: 15px;
+    box-shadow: 2px 6px 9px #242422;
+}

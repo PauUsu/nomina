@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./assets/components/layouts/components/pages/Home.jsx";
 import Liquidar from "./assets/components/layouts/components/auth/Liquidar.jsx";
 import { FormAddEmployee } from "./assets/components/layouts/components/auth/FormAddEmployee.jsx";
+import AdminUsers from "./assets/components/layouts/components/auth/AdminUsers.jsx";
+import { EditarUsers } from "./assets/components/layouts/components/auth/EditarUsers.jsx";
 
 let router = createBrowserRouter([
   {
@@ -23,6 +25,15 @@ let router = createBrowserRouter([
     path: "/agregar",
     element: <FormAddEmployee />,
   },
+  {
+    path: "/administrar-usuarios",
+    element: <AdminUsers />,
+  },
+  {
+    path: "/editar/:id",
+    element: <EditarUsers />,
+  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

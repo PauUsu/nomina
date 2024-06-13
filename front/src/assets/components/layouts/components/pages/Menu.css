@@ -10,8 +10,8 @@
 
 
 .containerMenuForm {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 16.06em 1fr;
 }
 
 .containerMenu {

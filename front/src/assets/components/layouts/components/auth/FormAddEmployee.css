@@ -1,7 +1,7 @@
 .containerAddEmploy {
     background: white;
     border: 1px solid #ee2b7b;
-    border-radius: 3px;
+    border-radius: 15px;
     display: flex;
 }
 
@@ -10,20 +10,23 @@
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     width: 70%;
-    margin-left: 8.6em;
     margin-bottom: 25px;
     margin-top: 30px;
 }
 
 .containerFormAdd {
-    width: 70%;
-    margin-right: 5.8em;
+    margin: 0em 5em;
+    display: grid;
+    justify-items: center;
 }
 
 .styleLetterAdd {
-    color: #ee2b7b;
-    font-weight: bold;
-    width: 16%;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    color: #242422;
 }
 
 .styleImgAdd {
@@ -88,7 +91,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 4em 9em;
+    padding: 2em 2em;
     border-radius: 20px;
     position: relative;
 }
@@ -108,8 +111,8 @@
     border-radius: 10px;
 }
 
-.form label .input + span,
-.form label select + span {
+.form label .input+span,
+.form label select+span {
     color: rgba(255, 255, 255, 0.5);
     position: absolute;
     left: 10px;
@@ -119,27 +122,28 @@
     transition: 0.3s ease;
 }
 
-.form label .input:placeholder-shown + span,
-.form label select:placeholder-shown + span {
+.form label .input:placeholder-shown+span,
+.form label select:placeholder-shown+span {
     top: 12.5px;
     font-size: 0.9em;
 }
 
-.form label .input:focus + span,
-.form label .input:valid + span,
-.form label select:focus + span,
-.form label select:valid + span {
+.form label .input:focus+span,
+.form label .input:valid+span,
+.form label select:focus+span,
+.form label select:valid+span {
     color: #ee2b7b;
     top: 0px;
     font-size: 0.7em;
     font-weight: 600;
 }
 
-.input, select {
+.input,
+select {
     font-size: medium;
 }
 
-.stylesSelects{
+.stylesSelects {
     width: 104% !important;
     max-width: 102.5%;
 }
@@ -159,12 +163,57 @@
     background-color: #00bfff96;
 }
 
-.btonSubmit{
+.btonSubmit {
     display: flex;
     justify-content: center;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 12px;
+    gap: 8px;
+    height: 45px;
+    width: 150px;
+    border: none;
+    background: rgb(242 141 183);
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
 
+.lable {
+    line-height: 22px;
+    font-size: 17px;
+    color: #fff;
+    margin-left: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
 
+.button .span {
+    border-radius: 50%;
+    background-color: rgb(238 43 123);
+    padding: 10px;
+    position: absolute;
+    left: 0;
+}
 
+.button:hover {
+    background: rgb(238 43 123);
+}
 
+.button:hover .svg-icon {
+    animation: slope 0.8s linear infinite;
+}
+
+@keyframes slope {
+    0% {}
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {}
+}

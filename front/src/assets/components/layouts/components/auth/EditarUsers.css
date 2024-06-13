@@ -1,0 +1,45 @@
+.contenedorBtns {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.card-button-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-button {
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.primary {
+    background-color: rgb(255, 114, 109);
+    color: white;
+}
+
+.primary:hover {
+    background-color: rgb(255, 73, 66);
+}
+
+.secondary {
+    background-color: #8669ff;
+}
+
+.secondary:hover {
+    background-color: rgb(238 43 123);
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}

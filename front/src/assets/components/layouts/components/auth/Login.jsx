@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { conDatabase } from "../../../database/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
+import Swal from "sweetalert2"
 
 const Login = () => {
   // esta funcion es para almacenar el objeto con los usuarios
@@ -39,10 +40,20 @@ const Login = () => {
 
   function inicioSesion() {
     if (buscarUsuario()) {
-      console.log("bienvenido...");
+      Swal.fire({
+        title: "Bienvenido",
+        text: "Será direccionado al Menú",
+        icon: "success"
+    })
+      // console.log("bienvenido...");
       redireccion("/home");
     } else {
-      console.log("error de autenticación");
+      // console.log("error de autenticación");
+      Swal.fire({
+        title: "Error",
+        text: "Usuario y contraseña incorrecto",
+        icon: "Error"
+    })
     }
   }
 

@@ -6,7 +6,7 @@ const Header = () =>{
             <div>
                 <img src="public/logoCesde.png" alt="logo" className="styleLogo"/>
             </div>
-            <div>
+            <div className='titleHeader'>
                 <p className="styleTexto"> Centro de costos y nómina </p>
             </div>
         </div>
